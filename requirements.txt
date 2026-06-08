@@ -1,5 +1,6 @@
-flask
+Flask
 pdfplumber
 scikit-learn
-pandas
 numpy
+pandas
+gunicorn
