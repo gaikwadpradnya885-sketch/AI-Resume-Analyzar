@@ -1,6 +1,6 @@
-Flask
-pdfplumber
-scikit-learn
-numpy
-pandas
-gunicorn
+Flask==3.0.3
+pdfplumber==0.11.4
+scikit-learn==1.5.1
+numpy==2.0.1
+pandas==2.2.2
+gunicorn==23.0.0
