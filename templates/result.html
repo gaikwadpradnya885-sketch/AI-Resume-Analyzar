@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Analysis Result</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📊 Resume Analysis Report</h1>
+
+    <div class="score-card">
+
+        <h1>{{ score }}%</h1>
+
+        <p>Job Match Score</p>
+
+    </div>
+
+    <h2>✅ Detected Skills</h2>
+
+    <div class="skills">
+
+        {% for skill in skills %}
+
+        <span class="badge">
+            {{ skill }}
+        </span>
+
+        {% endfor %}
+
+    </div>
+
+    <br>
+
+    <h2>❌ Missing Skills</h2>
+
+    <div class="skills">
+
+        {% for skill in missing_skills %}
+
+        <span class="badge-red">
+            {{ skill }}
+        </span>
+
+        {% endfor %}
+
+    </div>
+
+    <div class="suggestion-box">
+
+        <h2>🤖 AI Suggestions</h2>
+
+        <ul>
+
+            {% for suggestion in suggestions %}
+
+            <li>{{ suggestion }}</li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+    <a href="/" class="back-btn">
+        Analyze Another Resume
+    </a>
+
+</div>
+
+</body>
+</html>

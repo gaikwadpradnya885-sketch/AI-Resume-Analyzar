@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #06b6d4
+    );
+    padding:40px;
+}
+
+.container{
+    width:900px;
+    max-width:100%;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.upload-box{
+    display:block;
+    border:2px dashed white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+.upload-box input{
+    display:none;
+}
+
+textarea{
+    width:100%;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    resize:none;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#4f46e5;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.02);
+}
+
+.score-card{
+    background:white;
+    color:#4f46e5;
+    text-align:center;
+    padding:25px;
+    border-radius:15px;
+    margin:25px 0;
+}
+
+.score-card h1{
+    font-size:70px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.badge{
+    background:#10b981;
+    padding:10px 18px;
+    border-radius:25px;
+    font-size:14px;
+}
+
+.badge-red{
+    background:#ef4444;
+    padding:10px 18px;
+    border-radius:25px;
+    font-size:14px;
+}
+
+.suggestion-box{
+    margin-top:30px;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+}
+
+.suggestion-box ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.suggestion-box li{
+    margin-bottom:10px;
+}
+
+.back-btn{
+    display:block;
+    margin-top:25px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
